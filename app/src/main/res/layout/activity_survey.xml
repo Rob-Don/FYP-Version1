@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SurveyActivity">
+
+    <ScrollView
+        android:layout_width="385dp"
+        android:layout_height="678dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="1000dp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/SNurseContact"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:entries="@array/Nurse"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SMed"
+                app:layout_constraintVertical_bias="0.107" />
+
+            <RadioGroup
+                android:id="@+id/rgFeel"
+                android:layout_width="164dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="71dp"
+                android:layout_marginLeft="71dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="149dp"
+                android:layout_marginRight="149dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <RadioButton
+                    android:id="@+id/rbVGood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Very Good"
+                    android:checked="true"      />
+
+                <RadioButton
+                    android:id="@+id/rbGood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Good" />
+
+                <RadioButton
+                    android:id="@+id/rbMod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Moderate" />
+
+                <RadioButton
+                    android:id="@+id/rbBad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bad" />
+
+                <RadioButton
+                    android:id="@+id/rbVBad"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Very Bad" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="164dp"
+                android:layout_marginRight="164dp"
+                android:layout_marginBottom="240dp"
+                android:text="Please select how you feel today"
+                app:layout_constraintBottom_toTopOf="@+id/rgFeel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="162dp"
+                android:layout_marginRight="162dp"
+                android:layout_marginBottom="8dp"
+                android:text="Please rate your diet recently"
+                app:layout_constraintBottom_toTopOf="@+id/rgDiet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rgFeel" />
+
+            <RadioGroup
+                android:id="@+id/rgDiet"
+                android:layout_width="173dp"
+                android:layout_height="115dp"
+                android:layout_marginStart="62dp"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="149dp"
+                android:layout_marginRight="149dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <RadioButton
+                    android:id="@+id/rbVGood2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Very Good"
+                    android:checked="true"  />
+
+                <RadioButton
+                    android:id="@+id/rbGood3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Good" />
+
+                <RadioButton
+                    android:id="@+id/rbMod3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Moderate" />
+
+                <RadioButton
+                    android:id="@+id/rbBad4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bad" />
+
+                <RadioButton
+                    android:id="@+id/rbVBad2"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Very Bad" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtActivity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="113dp"
+                android:layout_marginRight="113dp"
+                android:layout_marginBottom="7dp"
+                android:text="Please rate your physical activity recently"
+                app:layout_constraintBottom_toTopOf="@+id/rgActivity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rgDiet" />
+
+            <RadioGroup
+                android:id="@+id/rgActivity"
+                android:layout_width="152dp"
+                android:layout_height="101dp"
+                android:layout_marginStart="71dp"
+                android:layout_marginLeft="71dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtActivity2">
+
+                <RadioButton
+                    android:id="@+id/rbVGood3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Very Good"
+                    android:checked="true"  />
+
+                <RadioButton
+                    android:id="@+id/rbGood2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Good" />
+
+                <RadioButton
+                    android:id="@+id/rbMod2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Moderate" />
+
+                <RadioButton
+                    android:id="@+id/rbBad2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bad" />
+
+                <RadioButton
+                    android:id="@+id/rbVBad3"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Very Bad" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtMedication2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="68dp"
+                android:layout_marginRight="68dp"
+                android:text="Have you taken your perscribed medication toady?"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rgActivity" />
+
+            <Spinner
+                android:id="@+id/SMed"
+                android:layout_width="266dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:entries="@array/medication"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtMedication2" />
+
+            <Button
+                android:id="@+id/btnSurvey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:layout_marginLeft="84dp"
+                android:layout_marginTop="227dp"
+                android:layout_marginEnd="149dp"
+                android:layout_marginRight="149dp"
+                android:layout_marginBottom="4dp"
+                android:text="Complete Survey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNote" />
+
+            <TextView
+                android:id="@+id/txtNurse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="8dp"
+                android:text="Would you like your Community mental health nurse to contact you?"
+                app:layout_constraintBottom_toTopOf="@+id/SNurseContact"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SMed" />
+
+            <EditText
+                android:id="@+id/txtNote"
+                android:layout_width="327dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="46dp"
+                android:layout_marginRight="46dp"
+                android:layout_marginBottom="228dp"
+                android:ems="10"
+                android:inputType="textLongMessage"
+                app:layout_constraintBottom_toTopOf="@+id/btnSurvey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="650dp"
+                android:layout_marginBottom="32dp"
+                android:text="Please enter any other information you would like your doctor or mental health nurse to know."
+                app:layout_constraintBottom_toTopOf="@+id/txtNote"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
